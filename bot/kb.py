@@ -25,12 +25,12 @@ exit_audio_kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="◀️ Вы�
 iexit_audio_kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="◀️ Выйти в аудио меню", callback_data="audio_menu")]])
 
 
-# Selection menu set up
-select_menu = [
-    [InlineKeyboardButton(text="🥁 Ударные", callback_data="dram"), InlineKeyboardButton(text="👨‍🎤 Вокал", callback_data="vocals")],
-    [InlineKeyboardButton(text="🔊 Басс", callback_data="bass"), InlineKeyboardButton(text="🎹 Пианино", callback_data="piano")],
-    [InlineKeyboardButton(text="Другое", callback_data="other"), InlineKeyboardButton(text="Меню выбора", callback_data="return_2")] 
-]
-select_menu = InlineKeyboardMarkup(inline_keyboard=select_menu)
-exit_select_kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="◀️ Выйти в меню  выбора")]], resize_keyboard=True)
-iexit_select_kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="◀️ Выйти в меню выбора", callback_data="select_menu")]])
+# # Selection menu set up
+# select_menu = [
+#     [InlineKeyboardButton(text="🥁 Ударные", callback_data="dram"), InlineKeyboardButton(text="👨‍🎤 Вокал", callback_data="vocals")],
+#     [InlineKeyboardButton(text="🔊 Басс", callback_data="bass"), InlineKeyboardButton(text="🎹 Пианино", callback_data="piano")],
+#     [InlineKeyboardButton(text="Другое", callback_data="other"), InlineKeyboardButton(text="Меню выбора", callback_data="return_2")] 
+# ]
+# select_menu = InlineKeyboardMarkup(inline_keyboard=select_menu)
+# exit_select_kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="◀️ Выйти в меню  выбора")]], resize_keyboard=True)
+# iexit_select_kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="◀️ Выйти в меню выбора", callback_data="select_menu")]])

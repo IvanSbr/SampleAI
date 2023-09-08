@@ -49,14 +49,14 @@ async def audio_to_main(callback: types.CallbackQuery):
 
 @router.callback_query(F.data ==  "selection")
 async def audio_to_select(callback: types.CallbackQuery):
-    await callback.message.answer(text.select_menu, reply_markup=kb.select_menu)
+    await callback.message.answer(text=text.select_menu)
     await callback.answer()
 
 
-@router.callback_query(F.data ==  "return_2")
-async def select_to_audio(callback: types.CallbackQuery):
-    await callback.message.answer(text.audio_menu, reply_markup=kb.audio_menu)
-    await callback.answer()
+# @router.callback_query(F.data ==  "return_2")
+# async def select_to_audio(callback: types.CallbackQuery):
+#     await callback.message.answer(text.audio_menu, reply_markup=kb.audio_menu)
+#     await callback.answer()
 
 
 @router.callback_query(F.data == "decomposition")
